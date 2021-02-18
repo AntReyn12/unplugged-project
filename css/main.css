@@ -136,11 +136,12 @@ p {
 }
 
 img {
+    width: 100%;
 
 }
 
 figure {
-
+    margin: 0;
 }
 
 address {
@@ -172,6 +173,14 @@ header .content-wrapper {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .header-divider {
@@ -245,6 +254,9 @@ footer .copyright {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url(../img/hero.jpg) center;
+    background-size: cover;
+    min-height: 500px;
 }
 
 .hero-area h1 {
@@ -296,6 +308,9 @@ input[type=button] {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url(../img/features.jpg) center;
+    background-size: cover;
+
 }
 
 .features h2 {
@@ -529,6 +544,10 @@ input[type=button] {
       display: none;
   }
   /*Hero Area*/
+  .hero-area {
+      min-height: 600px;
+  }
+
 
   .hero-area h1 {
     font-size: 3em;
@@ -577,7 +596,8 @@ input[type=button] {
     width: 85%;
   }
 
-  .reviews article div {
+  .reviews article div,
+  .reviews article figure {
       width: 49%;
   }
 
@@ -695,7 +715,7 @@ input[type=button] {
 
   /*Hero Area*/
   .hero-area h1 {
-      width: 60%;
+      width: 80%;
       font-size: 3.75em;
   }
 
