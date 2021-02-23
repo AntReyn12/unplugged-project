@@ -104,6 +104,8 @@ body {
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -272,6 +274,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+  margin-top: 0;
 }
 
 /* Aside */
@@ -316,9 +319,8 @@ input[type=button] {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: url(../img/features.jpg) center;
+    background: url('../img/features.jpg') center;
     background-size: cover;
-
 }
 
 .features h2 {
@@ -344,8 +346,9 @@ input[type=button] {
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
+
 
 /* Reviews */
 
@@ -604,15 +607,20 @@ input[type=button] {
   }
 
   .features article {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column wrap;
-      flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    margin-right: 0;
   }
 
-  .features .features-items {
-      width: 62%;
+  .features .features-item-description {
+    width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /*Reviews*/
